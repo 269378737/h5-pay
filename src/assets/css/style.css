@@ -1,0 +1,176 @@
+/* 默认样式重置 */
+p {
+  margin: 0;
+}
+
+/* 独立样式 */
+.pd0-left-right {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.disabled {
+  background: #ccc !important;
+}
+
+/* 悬浮定位 */
+.fixed-layout {
+  position: fixed !important;
+  width: 100%;
+  z-index: 1;
+}
+
+/* 外层容器 */
+.container {
+  /* padding-bottom: 8rem; */
+}
+/* 底部操作按钮 */
+.fixed-button {
+  position: fixed !important;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  background: #f0d3b4;
+  text-align: center;
+  color: #fff;
+  line-height: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.fixed-button-docker {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  background: #fff;  
+  text-align: right;
+  color: #fff;
+  line-height: 5rem;
+  height: 5rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 6rem;
+}
+
+.fixed-button-docker .cancel {
+  color: #9d9d9d;
+  border: solid 1px #bebebe;
+}
+
+.fixed-button-docker .confirm {
+  background: linear-gradient(92deg, 
+		#f1d5b8 0%, 
+		#e6c39e 100%);
+  color: #fff;
+  border: none;
+  margin-right: 1.5rem;
+}
+
+/* 顶部标题栏 */
+.nav-bar {
+  position: relative;
+  height: 4.67rem;
+  z-index: 10;
+  font-size: 2rem !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #bebebe;
+  z-index: 20001;
+}
+.nav-bar .title {
+  font-weight: normal !important;
+  width: 100%;
+  color: #4a4a4a;
+  font-size: 1.6rem;
+}
+.nav-bar .el-icon-arrow-left {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.33rem;
+  z-index: 20002;
+}
+
+/* 左侧标题，右侧描述 */
+.left-label {
+  text-align: left;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+.right-value {
+  text-align: right;
+  color: #4a4a4a;
+}
+
+
+@media (max-width: 375px) {
+  .right-value {
+    font-size: 1rem;
+  }
+}
+
+/* 模块标题 */
+.module-container {
+  padding: 1.4rem 1.33rem;
+  font-size: 1.24rem;
+  background: #fff;
+}
+
+/* 开通设备列表 */
+.lists li{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-right: -1.33rem;
+  padding: 0.5rem 0;
+  position: relative;
+  align-items: center;
+}
+.lists .left .pic {
+  width: 5rem;
+  height: 5rem;
+  margin-top: 0.4rem;
+}
+.lists .left, .lists .right {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.lists .right .name {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+}
+.lists .right .desc {
+  color: #9d9d9d;
+  font-size: 1.44rem;
+}
+
+/* 订单信息列表 */
+.list-order-info {
+  line-height: 4rem;
+}
+/*.list-order-info .order-number, 
+.list-order-info .order-num-copy,
+.list-order-info .order-time {
+  font-size: 1.4rem;
+}*/
+/* .list-order-info .order-number {
+  padding-right: 1rem;
+} */
+.list-order-info .order-num-copy {
+  color: #daaa76;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.list-order-info .split {
+  display: inline-block;
+  height: 1.4rem;
+  width: 0.1rem;
+  background: #ccc;
+}
+.list-order-info .success{
+  color: #0bc6bf;
+}
+.list-order-info .fail{
+  color: #ff9191;
+}
